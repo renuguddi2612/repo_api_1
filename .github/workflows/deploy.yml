@@ -21,10 +21,10 @@ jobs:
           aws-region: us-east-1
 
       - name: Zip Lambda function
-        run: zip function.zip lambda_function.py
+        run: zip function.zip api2_lambda.py
 
       - name: Deploy Lambda
         run: |
           aws lambda update-function-code \
-          --function-name crypto-api-export \
+          --function-name api_lambda_1 \
           --zip-file fileb://function.zip
