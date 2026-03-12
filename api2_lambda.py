@@ -7,7 +7,7 @@ from datetime import datetime
 
 s3 = boto3.client("s3")
 
-BUCKET_NAME = "crypto-market-data-bucket"
+BUCKET_NAME = "api2-user-data-bucket"
 
 API_URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd"
 
